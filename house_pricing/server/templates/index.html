@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<div class="bg"></div>
+<div class="header">
+    <p>&nbsp</p>
+    <p>House Price Prediction</p>
+</div>
+<form name="form" align='center' action="predict_home_price" method="post" class='text-container' onsubmit="return predict()" >
+    <p>&nbsp</p>
+    <p>Area of house in sqft:     <input type="text" name="total_sqft" value="{{total_sqft if total_sqft}}"></p>
+    <p class="pink">Name of the location:    <input type="text" name="location" value="{{location if location}}"></p>
+    <p>BHK number:    <input type="text" name="bhk" value="{{bhk if bhk}}"></p>
+    <p class="pink">Number of bathrooms:    <input type="text" name="bath" value="{{bath if bath}}"></p>
+    <p><input type="submit" name="submit" class="button"></p>
+</form>
+{% if msg: %}<p align="center" class="pink">Predicted price: {{msg}}</p>{% endif %}
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

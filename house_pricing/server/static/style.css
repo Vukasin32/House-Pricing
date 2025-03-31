@@ -1,0 +1,70 @@
+
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.bg {
+    background-image: url("lights.jpeg");
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    filter: blur(7px);
+    z-index: -1;
+
+}
+
+.text-container {
+    text-align: center;
+    color: #87CEFA;
+    font-weight: bold;
+    font-size: 18px;
+    font-family: Rockwell, sans-serif;
+}
+
+.pink{
+    font-family: Rockwell;
+    color: #FFC0CB;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.header{
+    font-family: Rockwell;
+    color: #FFC0CB;
+    font-style: italic;
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+input[type=text]{
+    width: 200px;
+    background-color: #0039a6;
+    border: none;
+    text-align: right;
+    font-size: 17px;
+    color: #FFC0CB;
+    font-style: italic;
+
+}
+
+.btn btn-success{
+    color: #FF00BF
+}
+
+.button {
+  font-family: Rockwell;		
+  color: #FFC0CB; /* Green */
+  border: none;
+  background-color: #00308F;
+  padding: 10px 22px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: bold;
+
+}
